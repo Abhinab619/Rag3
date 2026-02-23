@@ -1,0 +1,2 @@
+{"timestamp": "2026-02-23T10:28:29.229074+00:00", "model": "unknown", "caller": "RAGGrader.is_answer_grounded", "prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0, "cost_inr": 0.0, "latency_ms": 1353.22, "request_id": null}
+{"timestamp": "2026-02-23T10:28:31.163483+00:00", "model": "unknown", "caller": "RAGGrader.is_answer_grounded", "prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0, "cost_inr": 0.0, "latency_ms": 737.0, "request_id": null}

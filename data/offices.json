@@ -1,0 +1,262 @@
+[
+  {
+    "office_id": "OFF_DIST_AGRI_002",
+    "office_name": "District Agriculture Office (DAO) Munger",
+    "district": "Munger",  
+    "address": "Krishi Bhawan, Near Munger Fort Gate No. 1, Munger",
+    "contact_number": "06344-220055",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [ 
+      "BR_AGRI_PMKISAN_006",
+      "BR_AGRI_DIESEL_011",
+      "BR_AGRI_INPUT_023",  
+      "BR_AGRI_FASAL_027",
+      "BR_AGRI_YANTRA_032",
+      "BR_ENV_JALJEEVAN_040",
+      "BR_AGRI_SOIL_041"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_PMKISAN_006", "service_name": "PM Kisan Application" },
+      { "service_id": "SRV_APP_DIESEL_011", "service_name": "Diesel Subsidy Application" },
+      { "service_id": "SRV_APP_AGINPUT_023", "service_name": "Input Subsidy Application" },
+      { "service_id": "SRV_APP_FASAL_027", "service_name": "Crop Assistance Application" },
+      { "service_id": "SRV_APP_YANTRA_032", "service_name": "Farm Machinery Application" },
+      { "service_id": "SRV_APP_JJH_040", "service_name": "Jal Jeevan Hariyali Application" },
+      { "service_id": "SRV_APP_SOIL_041", "service_name": "Soil Health Card Application" },
+      { "service_id": "SRV_REG_FARMER_000", "service_name": "Farmer Registration (DBT)" }
+    ]
+  },
+  {
+    "office_id": "OFF_BLOCK_PATNA_001",
+    "office_name": "Block Development Office (BDO), Munger Sadar",
+    "district": "Munger",
+    "address": "Fort Area (Qila), Inside Munger Fort, Near Collectorate",
+    "contact_number": "06344-222444",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [
+      "BR_HOUS_PMAYG_009",
+      "BR_LAB_MGNREGA_015",
+      "BR_UTIL_TOILET_024",
+      "BR_SOC_WIDOW_008",
+      "BR_SOC_DIS_016",
+      "BR_SOC_KABIR_013",
+      "BR_SOC_PARVARISH_022",
+      "BR_SOC_NFBS_033",
+      "BR_WOM_KANYAVIVAH_036"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_PMAYG_009", "service_name": "PMAY-G Housing Application" },
+      { "service_id": "SRV_APP_MGNREGA_015", "service_name": "Job Card Application" },
+      { "service_id": "SRV_APP_LSBA_024", "service_name": "Toilet Construction Incentive" },
+      { "service_id": "SRV_CERT_INC_003", "service_name": "Income Certificate Issuance" },
+      { "service_id": "SRV_CERT_CASTE_005", "service_name": "Caste Certificate Issuance" },
+      { "service_id": "SRV_CERT_LPC_004", "service_name": "Land Possession Certificate (LPC)" },
+      { "service_id": "SRV_CERT_AFFIDAVIT_014", "service_name": "Executive Magistrate Affidavit" }
+    ]
+  },
+  {    
+    "office_id": "OFF_HEALTH_DEPT_003",
+    "office_name": "Civil Surgeon Office / Sadar Hospital Munger",
+    "district": "Munger",
+    "address": "Sadar Hospital Campus, Main Road, Munger Town",
+    "contact_number": "06344-224411",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [
+      "BR_HLTH_PMJAY_007", 
+      "BR_HLTH_JANANI_014",
+      "BR_HLTH_MED_034"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_PMJAY_007", "service_name": "Ayushman Bharat KYC" },
+      { "service_id": "SRV_APP_JSY_014", "service_name": "Janani Suraksha Registration" },
+      { "service_id": "SRV_APP_MEDRELIEF_034", "service_name": "Medical Grant Application" },
+      { "service_id": "SRV_CERT_DIS_012", "service_name": "Disability Certificate (UDID)" },
+      { "service_id": "SRV_REG_DEATH_009", "service_name": "Death Registration" },
+      { "service_id": "SRV_REG_BIRTH_016", "service_name": "Birth Registration" }
+    ]
+  },
+  {
+    "office_id": "OFF_SOC_WEL_DEPT_004",
+    "office_name": "District Social Security Cell, Munger",
+    "district": "Munger",
+    "address": "Vikas Bhawan, 1st Floor, Collectorate Campus, Munger",
+    "contact_number": "06344-225500",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [
+      "BR_SOC_WIDOW_008",
+      "BR_SOC_DIS_016",
+      "BR_SOC_KABIR_013",
+      "BR_SOC_PARVARISH_022",
+      "BR_SOC_NFBS_033",
+      "BR_SOC_INTERCASTE_035",
+      "BR_WOM_KANYAVIVAH_036",
+      "BR_EDU_CIVIL_029",
+      "BR_SOC_RATION_042"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_SSPS_008", "service_name": "Widow Pension Application" },
+      { "service_id": "SRV_APP_DISPEN_016", "service_name": "Disability Pension Application" },
+      { "service_id": "SRV_APP_KABIR_013", "service_name": "Kabir Antyeshti Grant" },
+      { "service_id": "SRV_APP_PARVARISH_022", "service_name": "Parvarish Yojana Application" },
+      { "service_id": "SRV_APP_NFBS_033", "service_name": "NFBS Application" },
+      { "service_id": "SRV_APP_INTERCASTE_035", "service_name": "Intercaste Marriage Incentive" },
+      { "service_id": "SRV_APP_KANYAVIVAH_036", "service_name": "Kanya Vivah Application" },
+      { "service_id": "SRV_APP_CIVIL_029", "service_name": "Civil Services Incentive" },
+      { "service_id": "SRV_APP_RATION_042", "service_name": "Ration Card Application" },
+      { "service_id": "SRV_RATION_CARD_010", "service_name": "Ration Card Issuance" }
+    ]
+  },
+  {
+    "office_id": "OFF_EDU_DEPT_006",
+    "office_name": "District Registration & Counseling Center (DRCC) Munger",
+    "district": "Munger",
+    "address": "Sikandarpur, Near Government Polytechnic College, Munger",
+    "contact_number": "06344-222999",
+    "working_hours": "09:30 AM - 06:00 PM",
+    "managed_schemes": [
+      "BR_WOM_KANYA_010",
+      "BR_EDU_POSTMAT_018",
+      "BR_EDU_CYCLE_025",
+      "BR_EDU_MATRIC_030",
+      "BR_EDU_UNIFORM_045"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_KANYA_010", "service_name": "Kanya Utthan (Graduation) Application" },
+      { "service_id": "SRV_APP_PMS_018", "service_name": "Post Matric Scholarship Application" },
+      { "service_id": "SRV_APP_CYCLE_025", "service_name": "Cycle Yojana Processing" },
+      { "service_id": "SRV_APP_MATRIC_030", "service_name": "10th Pass Scholarship Processing" },
+      { "service_id": "SRV_APP_UNIFORM_045", "service_name": "Uniform Subsidy Processing" }
+    ]
+  },
+  {
+    "office_id": "OFF_IND_DEPT_008",
+    "office_name": "District Industries Centre (DIC) Munger",
+    "district": "Munger",
+    "address": "Industrial Estate, Near ITC Factory Main Gate, Munger",
+    "contact_number": "06344-223388",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [
+      "BR_BIZ_PMEGP_017",
+      "BR_WOM_UJJWALA_020",
+      "BR_URB_SVANIDHI_021",
+      "BR_BIZ_UDYAMI_026",
+      "BR_BIZ_VISHWA_039"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_PMEGP_017", "service_name": "PMEGP Loan Application" },
+      { "service_id": "SRV_APP_UJJWALA_020", "service_name": "Ujjwala 2.0 Application" },
+      { "service_id": "SRV_APP_SVANIDHI_021", "service_name": "PM SVANidhi Application" },
+      { "service_id": "SRV_APP_UDYAMI_026", "service_name": "Mukhyamantri Udyami Yojana Application" },
+      { "service_id": "SRV_APP_VISHWA_039", "service_name": "PM Vishwakarma Registration" }
+    ]
+  },
+  {
+    "office_id": "OFF_ANIM_HUSB_010",
+    "office_name": "District Animal Husbandry Office Munger",
+    "district": "Munger",
+    "address": "Veterinary Hospital Campus, Bekapur, Munger",
+    "contact_number": "06344-221133",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [
+      "BR_AGRI_GOAT_037",
+      "BR_AGRI_DAIRY_038"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_GOAT_037", "service_name": "Goat Rearing Subsidy Application" },
+      { "service_id": "SRV_APP_DAIRY_038", "service_name": "Dairy Development Application" }
+    ]
+  },
+  {
+    "office_id": "OFF_FISH_DEPT_009",
+    "office_name": "District Fisheries Office Munger",
+    "district": "Munger",
+    "address": "Near Ganga Ghat, Behind Circuit House, Munger",
+    "contact_number": "06344-227788",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [
+      "BR_AGRI_MATSYA_031"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_PMMSY_031", "service_name": "PM Matsya Sampada Application" }
+    ]
+  },
+  {
+    "office_id": "OFF_TRANS_DEPT_007",
+    "office_name": "District Transport Office (DTO) Munger",
+    "district": "Munger",
+    "address": "Collectorate Campus, Near Treasury Office, Munger",
+    "contact_number": "06344-222123",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [
+      "BR_TRANS_PARIVAHAN_028"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_PARIVAHAN_028", "service_name": "Gram Parivahan Application" },
+      { "service_id": "SRV_LIC_DRIVE_017", "service_name": "Driving License Issuance" },
+      { "service_id": "SRV_VEH_RC_018", "service_name": "Vehicle Registration (RC)" }
+    ]
+  },
+  {
+    "office_id": "OFF_SDO_MUNGER_001",
+    "office_name": "Sub-Divisional Office (SDO), Munger Sadar",
+    "district": "Munger",
+    "address": "Collectorate Campus, Near SP Office, Munger",
+    "contact_number": "06344-222100",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [
+      "BR_HLTH_MED_034",
+      "BR_SOC_RATION_042"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_REG_MARRIAGE_019", "service_name": "Marriage Registration" }
+    ]
+  },
+  {
+    "office_id": "OFF_PHED_011",
+    "office_name": "Minor Irrigation Division Munger (PHED Proxy)",
+    "district": "Munger",
+    "address": "Irrigation Colony, Lallupokhar, Munger",
+    "contact_number": "06344-227700",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [
+      "BR_UTIL_HARGHAR_012"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_NALJAL_012", "service_name": "Har Ghar Nal Ka Jal Connection" }
+    ]
+  },
+  {
+    "office_id": "OFF_BANK_013",
+    "office_name": "Lead District Bank / Local Bank Branches",
+    "district": "Munger",
+    "address": "Various Branches across Munger District",
+    "contact_number": "Toll-Free 1800-XXX-XXXX",
+    "working_hours": "10:00 AM - 04:00 PM",
+    "managed_schemes": [
+      "BR_AGRI_KCC_019",
+      "BR_FIN_SUKANYA_043",
+      "BR_FIN_APY_044"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_APP_KCC_019", "service_name": "Kisan Credit Card Loan" },
+      { "service_id": "SRV_APP_SSY_043", "service_name": "Sukanya Samriddhi Account Opening" },
+      { "service_id": "SRV_APP_APY_044", "service_name": "Atal Pension Enrollment" },
+      { "service_id": "SRV_ID_AADHAAR_001", "service_name": "Aadhaar Seva Kendra (in select banks)" }
+    ]
+  },
+  {
+    "office_id": "OFF_PANCHAYAT_012",
+    "office_name": "Gram Panchayat Office (Served by BDO)",
+    "district": "Munger",
+    "address": "Respective Village Panchayats, Munger",
+    "contact_number": "Contact Panchayat Secretary",
+    "working_hours": "10:00 AM - 05:00 PM",
+    "managed_schemes": [
+      "BR_UTIL_HARGHAR_012",
+      "BR_LAB_MGNREGA_015"
+    ],
+    "services_provided": [
+      { "service_id": "SRV_CERT_VEND_015", "service_name": "Vending Certificate (Urban Bodies)" }
+    ]
+  }
+]

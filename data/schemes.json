@@ -1,0 +1,1130 @@
+[
+  {
+    "scheme_id": "BR_AGRI_PMKISAN_006",
+    "scheme_name": "PM Kisan Samman Nidhi",
+    "synonyms": ["Kisan Samman", "6000 rupees scheme", "Farmer Income Support"],
+    "is_active": true,
+    "category": "Agriculture",  
+    "managing_office_id": "OFF_DIST_AGRI_002",
+    "application_service_id": "SRV_APP_PMKISAN_006",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "age_max": null,
+      "employment_status": "Farmer",
+      "residency_requirement": "Landholding farmer family in Bihar",
+      "special_conditions": ["Must own cultivable land", "Not an income tax payer"]
+    },
+    "benefits": {
+      "benefit_type": "Direct Cash Transfer",
+      "max_amount_inr": 6000,
+      "frequency": "Annually (3 installments of 2000)"
+    }, 
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply on DBT Agriculture Portal", "designated_office_id": "OFF_DIST_AGRI_002" },
+        { "step": 2, "action": "Verification by Coordinator/Agriculture Advisor", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Land Possession Certificate (LPC)", "is_mandatory": true, "linked_service_id": "SRV_CERT_LPC_004" },
+      { "doc_name": "Aadhaar Card", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" }
+    ]
+  },
+  {
+    "scheme_id": "BR_HLTH_PMJAY_007",
+    "scheme_name": "Ayushman Bharat (PM-JAY)",
+    "synonyms": ["Modi Care", "Health Card", "5 Lakh Insurance"],
+    "is_active": true,
+    "category": "Health",
+    "managing_office_id": "OFF_HEALTH_DEPT_003",
+    
+    "application_service_id": "SRV_APP_PMJAY_007",
+    "eligibility_criteria": {
+      "age_min": null,
+      "age_max": null,
+      "special_conditions": ["Listed in SECC 2011 Database", "Ration Card Holder"]
+    }, 
+    "benefits": {    
+      "benefit_type": "Health Insurance",
+      "max_amount_inr": 500000,
+      "description": "Cashless treatment at empaneled hospitals per family per year"
+    },
+    "application_process": {     
+      "stages": [
+        { "step": 1, "action": "Check Name in List Online", "designated_office_id": "OFF_HEALTH_DEPT_003" },
+        { "step": 2, "action": "KYC at CSC or Empaneled Hospital", "designated_office_id": "OFF_HEALTH_DEPT_003" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Ration Card", "is_mandatory": true, "linked_service_id": "SRV_RATION_CARD_010" },
+      { "doc_name": "Aadhaar Card", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" }
+    ]
+  },
+  {
+    "scheme_id": "BR_SOC_WIDOW_008",
+    "scheme_name": "Lakshmibai Social Security Pension",
+    "synonyms": ["Widow Pension", "Vidhwa Pension"],
+    "is_active": true,
+    "category": "Social Security",
+    "managing_office_id": "OFF_SOC_WEL_DEPT_004",
+    "application_service_id": "SRV_APP_SSPS_008",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "age_max": null,
+      "special_conditions": ["Must be a widow", "Annual income less than ₹60,000", "BPL Family"]
+    },
+    "benefits": {
+      "benefit_type": "Pension",
+      "max_amount_inr": 400,
+      "frequency": "Monthly"
+    },            
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Fill Form at Block Office", "designated_office_id": "OFF_BLOCK_PATNA_001" },
+        { "step": 2, "action": "Verification by BDO", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Death Certificate of Husband", "is_mandatory": true, "linked_service_id": "SRV_REG_DEATH_009" },
+      { "doc_name": "Bank Passbook", "is_mandatory": true, "linked_service_id": "OFF_BANK_013" }
+    ]
+  },
+  {
+    "scheme_id": "BR_HOUS_PMAYG_009",
+    "scheme_name": "Pradhan Mantri Awas Yojana (Gramin)",
+    "synonyms": ["PM Awas", "Housing Scheme", "Indira Awas"],
+    "is_active": true,
+    "category": "Housing",
+    "managing_office_id": "OFF_RURAL_DEV_005",
+    "application_service_id": "SRV_APP_PMAYG_009",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "age_max": null,
+      "residency_requirement": "Rural Resident",
+      "special_conditions": ["Homeless or living in kutcha house", "Name in SECC List"]
+    },
+    "benefits": {
+      "benefit_type": "Financial Assistance",
+      "max_amount_inr": 120000,
+      "description": "Grant for house construction + 90 days MGNREGA wages"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Identification by Gram Sabha", "designated_office_id": "OFF_PANCHAYAT_012" },
+        { "step": 2, "action": "Registration at Block Office", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Aadhaar Card", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" },
+      { "doc_name": "Job Card (MGNREGA)", "is_mandatory": false, "linked_service_id": "SRV_APP_MGNREGA_015" }
+    ]
+  },
+  {
+    "scheme_id": "BR_WOM_KANYA_010",
+    "scheme_name": "Mukhyamantri Kanya Utthan Yojana (Graduation)",
+    "synonyms": ["Girl Graduation Scholarship", "Snatak Protsahan"],
+    "is_active": true,
+    "category": "Education",
+    "managing_office_id": "OFF_EDU_DEPT_006",
+    "application_service_id": "SRV_APP_KANYA_010",
+    "eligibility_criteria": {
+      "education_status": "Graduated",
+      "residency_requirement": "Permanent resident of Bihar",
+      "special_conditions": ["Must be a female student", "Graduated from recognized university in Bihar"]
+    },
+    "benefits": {
+      "benefit_type": "Scholarship",
+      "max_amount_inr": 50000,
+      "description": "One-time incentive after passing graduation"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply Online at Medhasoft Portal", "designated_office_id": "OFF_EDU_DEPT_006" },
+        { "step": 2, "action": "University Verification", "designated_office_id": "OFF_EDU_DEPT_006" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Graduation Marksheet", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Bank Account in Name of Student", "is_mandatory": true, "linked_service_id": "OFF_BANK_013" }
+    ]
+  },
+  {
+    "scheme_id": "BR_AGRI_DIESEL_011",
+    "scheme_name": "Bihar Diesel Subsidy Scheme",
+    "synonyms": ["Diesel Anudan", "Irrigation Subsidy"],
+    "is_active": true,
+    "category": "Agriculture",
+    "managing_office_id": "OFF_DIST_AGRI_002",
+    "application_service_id": "SRV_APP_DIESEL_011",
+    "eligibility_criteria": {
+      "employment_status": "Farmer",
+      "special_conditions": ["Used diesel pump for irrigation", "Drought affected area declaration"]
+    },
+    "benefits": {
+      "benefit_type": "Subsidy",
+      "max_amount_inr": 750,
+      "description": "₹75 per liter subsidy for irrigation"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply on DBT Agriculture Portal", "designated_office_id": "OFF_DIST_AGRI_002" },
+        { "step": 2, "action": "Submit Diesel Receipt", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Diesel Purchase Receipt", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Farmer Registration Number", "is_mandatory": true, "linked_service_id": "SRV_REG_FARMER_000" }
+    ]
+  },
+  {
+    "scheme_id": "BR_UTIL_HARGHAR_012",
+    "scheme_name": "Har Ghar Nal Ka Jal",
+    "synonyms": ["Nal Jal Yojana", "Water Connection"],
+    "is_active": true,
+    "category": "Utilities",
+    "managing_office_id": "OFF_PHED_011",
+    "application_service_id": "SRV_APP_NALJAL_012",
+    "eligibility_criteria": {
+      "residency_requirement": "Resident of Bihar",
+      "special_conditions": ["Household without active water connection"]
+    },
+    "benefits": {
+      "benefit_type": "Service",
+      "description": "Free piped water connection to household"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Contact Ward Member", "designated_office_id": "OFF_PANCHAYAT_012" },
+        { "step": 2, "action": "Application at Panchayat Office", "designated_office_id": "OFF_PANCHAYAT_012" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Aadhaar Card", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" }
+    ]
+  },
+  {
+    "scheme_id": "BR_SOC_KABIR_013",
+    "scheme_name": "Kabir Antyeshti Anudan Yojana",
+    "synonyms": ["Funeral Assistance", "Antyeshti"],
+    "is_active": true,
+    "category": "Social Welfare",
+    "managing_office_id": "OFF_SOC_WEL_DEPT_004",
+    "application_service_id": "SRV_APP_KABIR_013",
+    "eligibility_criteria": {
+      "special_conditions": ["Deceased person must be from BPL family"]
+    },
+    "benefits": {
+      "benefit_type": "Cash Assistance",
+      "max_amount_inr": 3000,
+      "description": "Immediate cash for funeral rites"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Contact Panchayat Secretary", "designated_office_id": "OFF_PANCHAYAT_012" },
+        { "step": 2, "action": "Amount disbursed immediately", "designated_office_id": "OFF_PANCHAYAT_012" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Death Certificate (or intimation)", "is_mandatory": true, "linked_service_id": "SRV_REG_DEATH_009" },
+      { "doc_name": "BPL Card", "is_mandatory": true, "linked_service_id": "SRV_RATION_CARD_010" }
+    ]
+  },
+  {
+    "scheme_id": "BR_HLTH_JANANI_014",
+    "scheme_name": "Janani Suraksha Yojana (JSY)",
+    "synonyms": ["Pregnancy Aid", "Delivery Money"],
+    "is_active": true,
+    "category": "Health",
+    "managing_office_id": "OFF_HEALTH_DEPT_003",
+    "application_service_id": "SRV_APP_JSY_014",
+    "eligibility_criteria": {
+      "age_min": 19,
+      "special_conditions": ["Pregnant women from BPL/SC/ST category", "Delivery at Govt Hospital"]
+    },
+    "benefits": {
+      "benefit_type": "Cash Assistance",
+      "max_amount_inr": 1400,
+      "description": "₹1400 for rural area delivery + ₹300 for ASHA worker"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Register with ASHA Worker", "designated_office_id": "OFF_HEALTH_DEPT_003" },
+        { "step": 2, "action": "Delivery at Health Center", "designated_office_id": "OFF_HEALTH_DEPT_003" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "MCP Card (Mother Child Protection)", "is_mandatory": true, "linked_service_id": "OFF_HEALTH_DEPT_003" },
+      { "doc_name": "Bank Passbook", "is_mandatory": true, "linked_service_id": "OFF_BANK_013" }
+    ]
+  },
+  {
+    "scheme_id": "BR_LAB_MGNREGA_015",
+    "scheme_name": "MGNREGA Job Card",
+    "synonyms": ["100 days work", "NREGA", "Job Card"],
+    "is_active": true,
+    "category": "Employment",
+    "managing_office_id": "OFF_RURAL_DEV_005",
+    "application_service_id": "SRV_APP_MGNREGA_015",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "residency_requirement": "Rural Resident",
+      "special_conditions": ["Willing to do unskilled manual labor"]
+    },
+    "benefits": {
+      "benefit_type": "Employment",
+      "description": "Guarantee of 100 days of wage employment per financial year"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at Gram Panchayat", "designated_office_id": "OFF_PANCHAYAT_012" },
+        { "step": 2, "action": "Issue of Job Card within 15 days", "designated_office_id": "OFF_PANCHAYAT_012" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Aadhaar Card", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" },
+      { "doc_name": "Passport Photo", "is_mandatory": true, "linked_service_id": null }
+    ]
+  },
+  {
+    "scheme_id": "BR_SOC_DIS_016",
+    "scheme_name": "Bihar State Disability Pension",
+    "synonyms": ["Viklang Pension", "Divyang Pension"],
+    "is_active": true,
+    "category": "Social Security",
+    "managing_office_id": "OFF_SOC_WEL_DEPT_004",
+    "application_service_id": "SRV_APP_DISPEN_016",
+    "eligibility_criteria": {
+      "age_min": null,
+      "special_conditions": ["Minimum 40% disability", "No age limit"]
+    },
+    "benefits": {
+      "benefit_type": "Pension",
+      "max_amount_inr": 400,
+      "frequency": "Monthly"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at RTPS Counter/Block", "designated_office_id": "OFF_BLOCK_PATNA_001" },
+        { "step": 2, "action": "Verification", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Disability Certificate (UDID)", "is_mandatory": true, "linked_service_id": "SRV_CERT_DIS_012" },
+      { "doc_name": "Income Certificate", "is_mandatory": false, "linked_service_id": "SRV_CERT_INC_003" }
+    ]
+  },
+  {
+    "scheme_id": "BR_BIZ_PMEGP_017",
+    "scheme_name": "Prime Minister Employment Generation Programme (PMEGP)",
+    "synonyms": ["Business Loan", "PMEGP", "Subsidy Loan"],
+    "is_active": true,
+    "category": "Business",
+    "managing_office_id": "OFF_IND_DEPT_008",
+    "application_service_id": "SRV_APP_PMEGP_017",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "education_status": "Passed Class 8 (for manufacturing >10L)",
+      "special_conditions": ["New project only", "No other subsidy availed"]
+    },
+    "benefits": {
+      "benefit_type": "Loan Subsidy",
+      "max_amount_inr": 5000000,
+      "description": "Subsidy up to 35% of project cost in rural areas"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Online Application at KVIC Portal", "designated_office_id": "OFF_IND_DEPT_008" },
+        { "step": 2, "action": "Interview at District Task Force Center", "designated_office_id": "OFF_IND_DEPT_008" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Project Report", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Caste Certificate", "is_mandatory": false, "linked_service_id": "SRV_CERT_CASTE_005" }
+    ]
+  },
+  {
+    "scheme_id": "BR_EDU_POSTMAT_018",
+    "scheme_name": "Post Matric Scholarship (PMS)",
+    "synonyms": ["PMS Bihar", "Scholarship SC/ST/BC/EBC"],
+    "is_active": true,
+    "category": "Education",
+    "managing_office_id": "OFF_EDU_DEPT_006",
+    "application_service_id": "SRV_APP_PMS_018",
+    "eligibility_criteria": {
+      "education_status": "Enrolled in Post-Matric Course",
+      "residency_requirement": "Permanent resident of Bihar",
+      "special_conditions": ["Category SC/ST/BC/EBC", "Family Income < 3 Lakhs"]
+    },
+    "benefits": {
+      "benefit_type": "Scholarship",
+      "description": "Reimbursement of tuition fees and maintenance allowance"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at PMS Portal", "designated_office_id": "OFF_EDU_DEPT_006" },
+        { "step": 2, "action": "Institute Verification", "designated_office_id": "OFF_EDU_DEPT_006" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Bonafide Certificate", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Fee Receipt", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Caste Certificate", "is_mandatory": true, "linked_service_id": "SRV_CERT_CASTE_005" }
+    ]
+  },
+  {
+    "scheme_id": "BR_AGRI_KCC_019",
+    "scheme_name": "Kisan Credit Card (KCC)",
+    "synonyms": ["Kisan Loan", "Farming Loan"],
+    "is_active": true,
+    "category": "Agriculture",
+    "managing_office_id": "OFF_BANK_013",
+    "application_service_id": "SRV_APP_KCC_019",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "age_max": 75,
+      "employment_status": "Farmer / Sharecropper",
+      "residency_requirement": "Bihar"
+    },
+    "benefits": {
+      "benefit_type": "Loan",
+      "max_amount_inr": 300000,
+      "interest_rate_text": "Effective interest 4% on timely repayment"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at Bank or PM Kisan Portal", "designated_office_id": "OFF_BANK_013" },
+        { "step": 2, "action": "Land Verification", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Land Records", "is_mandatory": true, "linked_service_id": "SRV_CERT_LPC_004" },
+      { "doc_name": "Affidavit of no dues", "is_mandatory": true, "linked_service_id": "SRV_CERT_AFFIDAVIT_014" }
+    ]
+  },
+  {
+    "scheme_id": "BR_WOM_UJJWALA_020",
+    "scheme_name": "PM Ujjwala Yojana 2.0",
+    "synonyms": ["Gas Connection", "LPG Scheme", "Free Cylinder"],
+    "is_active": true,
+    "category": "Utilities",
+    "managing_office_id": "OFF_IND_DEPT_008",
+    "application_service_id": "SRV_APP_UJJWALA_020",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "special_conditions": ["Adult woman of poor household", "No existing LPG connection"]
+    },
+    "benefits": {
+      "benefit_type": "Subsidy",
+      "description": "Free First Refill and Stove + Deposit Free Connection"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at nearest LPG Distributor", "designated_office_id": "OFF_IND_DEPT_008" },
+        { "step": 2, "action": "KYC Verification", "designated_office_id": "OFF_IND_DEPT_008" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Aadhaar Card", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" },
+      { "doc_name": "Ration Card", "is_mandatory": true, "linked_service_id": "SRV_RATION_CARD_010" }
+    ]
+  },
+  {
+    "scheme_id": "BR_URB_SVANIDHI_021",
+    "scheme_name": "PM SVANidhi",
+    "synonyms": ["Street Vendor Loan", "Thela Loan", "10k Loan"],
+    "is_active": true,
+    "category": "Business",
+    "managing_office_id": "OFF_IND_DEPT_008",
+    "application_service_id": "SRV_APP_SVANIDHI_021",
+    "eligibility_criteria": {
+      "employment_status": "Street Vendor",
+      "special_conditions": ["Vending in urban area before March 2020"]
+    },
+    "benefits": {
+      "benefit_type": "Loan",
+      "max_amount_inr": 10000,
+      "interest_rate_text": "7% Interest Subsidy",
+      "description": "Collateral free working capital loan"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at CSC or Online", "designated_office_id": "OFF_IND_DEPT_008" },
+        { "step": 2, "action": "Recommendation by ULB (Town Vending Committee)", "designated_office_id": "OFF_IND_DEPT_008" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Vending Certificate / ID Card", "is_mandatory": false, "linked_service_id": "SRV_CERT_VEND_015" },
+      { "doc_name": "Aadhaar Linked Mobile", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" }
+    ]
+  },
+  {
+    "scheme_id": "BR_SOC_PARVARISH_022",
+    "scheme_name": "Parvarish Yojana",
+    "synonyms": ["Orphan Aid", "Foster Care"],
+    "is_active": true,
+    "category": "Social Welfare",
+    "managing_office_id": "OFF_SOC_WEL_DEPT_004",
+    "application_service_id": "SRV_APP_PARVARISH_022",
+    "eligibility_criteria": {
+      "age_min": 0,
+      "age_max": 18,
+      "special_conditions": ["Orphan or child of HIV/Leprosy patients", "BPL Family"]
+    },
+    "benefits": {
+      "benefit_type": "Monthly Allowance",
+      "max_amount_inr": 1000,
+      "description": "₹1000 per month per child"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at Child Development Project Office (CDPO)", "designated_office_id": "OFF_BLOCK_PATNA_001" },
+        { "step": 2, "action": "Verification by CDPO", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Medical Certificate of Parents (if applicable)", "is_mandatory": true, "linked_service_id": "OFF_HEALTH_DEPT_003" },
+      { "doc_name": "Birth Certificate of Child", "is_mandatory": true, "linked_service_id": "SRV_REG_BIRTH_016" }
+    ]
+  },
+  {
+    "scheme_id": "BR_AGRI_INPUT_023",
+    "scheme_name": "Agricultural Input Subsidy",
+    "synonyms": ["Krishi Input", "Fasal Chatipurti", "Crop Loss Compensation"],
+    "is_active": true,
+    "category": "Agriculture",
+    "managing_office_id": "OFF_DIST_AGRI_002",
+    "application_service_id": "SRV_APP_AGINPUT_023",
+    "eligibility_criteria": {
+      "employment_status": "Farmer",
+      "special_conditions": ["Crop loss due to natural calamity (Flood/Drought)", "Affected block declaration"]
+    },
+    "benefits": {
+      "benefit_type": "Compensation",
+      "max_amount_inr": 13500,
+      "description": "₹6,800/ha for rainfed, ₹13,500/ha for irrigated land"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply Online on DBT Agriculture after Notification", "designated_office_id": "OFF_DIST_AGRI_002" },
+        { "step": 2, "action": "Physical Verification by Kisan Salahkar", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "LPC / Land Receipt", "is_mandatory": true, "linked_service_id": "SRV_CERT_LPC_004" },
+      { "doc_name": "Self Declaration", "is_mandatory": true, "linked_service_id": "SRV_CERT_AFFIDAVIT_014" }
+    ]
+  },
+  {
+    "scheme_id": "BR_UTIL_TOILET_024",
+    "scheme_name": "Lohia Swachh Bihar Abhiyan (LSBA)",
+    "synonyms": ["Toilet Scheme", "Sauchalay Yojana", "IHHL"],
+    "is_active": true,
+    "category": "Utilities",
+    "managing_office_id": "OFF_RURAL_DEV_005",
+    "application_service_id": "SRV_APP_LSBA_024",
+    "eligibility_criteria": {
+      "residency_requirement": "Bihar Rural",
+      "special_conditions": ["Household without toilet", "BPL/APL(Specific Categories)"]
+    },
+    "benefits": {
+      "benefit_type": "Reimbursement",
+      "max_amount_inr": 12000,
+      "description": "Incentive after construction of toilet"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Construct Toilet", "designated_office_id": "OFF_PANCHAYAT_012" },
+        { "step": 2, "action": "Apply at Block/Panchayat with Geotagged Photo", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Photo with Toilet", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Bank Passbook", "is_mandatory": true, "linked_service_id": "OFF_BANK_013" }
+    ]
+  },
+  {
+    "scheme_id": "BR_EDU_CYCLE_025",
+    "scheme_name": "Mukhyamantri Balak/Balika Cycle Yojana",
+    "synonyms": ["Cycle Scheme", "Cycle Paisa"],
+    "is_active": true,
+    "category": "Education",
+    "managing_office_id": "OFF_EDU_DEPT_006",
+    "application_service_id": "SRV_APP_CYCLE_025",
+    "eligibility_criteria": {
+      "education_status": "Enrolled in Class 9",
+      "residency_requirement": "Bihar",
+      "special_conditions": ["Min 75% attendance in Class 8"]
+    },
+    "benefits": {
+      "benefit_type": "Cash Assistance",
+      "max_amount_inr": 3000,
+      "description": "For purchasing a bicycle"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "List prepared by School Principal", "designated_office_id": "OFF_EDU_DEPT_006" },
+        { "step": 2, "action": "DBT Transfer to Student Account", "designated_office_id": "OFF_EDU_DEPT_006" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "School ID Card", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Bank Account", "is_mandatory": true, "linked_service_id": "OFF_BANK_013" }
+    ]
+  },
+  {
+    "scheme_id": "BR_BIZ_UDYAMI_026",
+    "scheme_name": "Mukhyamantri Udyami Yojana",
+    "synonyms": ["Udyami Bihar", "10 Lakh Loan Scheme", "Mahila Udyami", "SC/ST Udyami"],
+    "is_active": true,
+    "category": "Business",
+    "managing_office_id": "OFF_IND_DEPT_008",
+    "application_service_id": "SRV_APP_UDYAMI_026",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "age_max": 50,
+      "education_status": "Passed Class 12 or ITI/Diploma",
+      "residency_requirement": "Bihar",
+      "special_conditions": ["Category: SC/ST/EBC/Women/Yuva", "New manufacturing/service unit"]
+    },
+    "benefits": {
+      "benefit_type": "Loan + Subsidy",
+      "max_amount_inr": 1000000,
+      "description": "₹10 Lakh Total: ₹5 Lakh Grant (Subsidy) + ₹5 Lakh Interest-Free Loan (1% interest for Yuva category)"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply Online at Udyami Portal", "designated_office_id": "OFF_IND_DEPT_008" },
+        { "step": 2, "action": "Selection by District Committee", "designated_office_id": "OFF_IND_DEPT_008" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Caste Certificate", "is_mandatory": true, "linked_service_id": "SRV_CERT_CASTE_005" },
+      { "doc_name": "Project Report", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Current Bank Account", "is_mandatory": true, "linked_service_id": "OFF_BANK_013" }
+    ]
+  },
+  {
+    "scheme_id": "BR_AGRI_FASAL_027",
+    "scheme_name": "Bihar Rajya Fasal Sahayata Yojana",
+    "synonyms": ["Crop Insurance", "Fasal Bima", "BRFSY"],
+    "is_active": true,
+    "category": "Agriculture",
+    "managing_office_id": "OFF_DIST_AGRI_002",
+    "application_service_id": "SRV_APP_FASAL_027",
+    "eligibility_criteria": {
+      "employment_status": "Farmer / Sharecropper",
+      "special_conditions": ["Crop yield less than threshold (20% decline)"]
+    },
+    "benefits": {
+      "benefit_type": "Compensation",
+      "max_amount_inr": 10000,
+      "description": "₹7,500/ha for <20% loss; ₹10,000/ha for >20% loss (Max 2 Hectares)"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Online Registration on Cooperative Portal", "designated_office_id": "OFF_DIST_AGRI_002" },
+        { "step": 2, "action": "Crop Cutting Experiment (CCE) Verification", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "LPC / Self Declaration (Sharecropper)", "is_mandatory": true, "linked_service_id": "SRV_CERT_LPC_004" },
+      { "doc_name": "Aadhaar", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" }
+    ]
+  },
+  {
+    "scheme_id": "BR_TRANS_PARIVAHAN_028",
+    "scheme_name": "Mukhyamantri Gram Parivahan Yojana",
+    "synonyms": ["Auto Subsidy", "E-Rickshaw Scheme", "Vehicle Loan"],
+    "is_active": true,
+    "category": "Transport",
+    "managing_office_id": "OFF_TRANS_DEPT_007",
+    "application_service_id": "SRV_APP_PARIVAHAN_028",
+    "eligibility_criteria": {
+      "age_min": 21,
+      "residency_requirement": "Rural Panchayat Resident",
+      "special_conditions": ["Category: SC/ST/EBC", "Must have valid Driving License"]
+    },
+    "benefits": {
+      "benefit_type": "Subsidy",
+      "max_amount_inr": 100000,
+      "description": "50% of vehicle cost or ₹1 Lakh (whichever is less) for purchase of 3-wheeler/4-wheeler passenger vehicle"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply Online at Transport Dept", "designated_office_id": "OFF_TRANS_DEPT_007" },
+        { "step": 2, "action": "Selection by BDO/Sadar SDO", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Driving License", "is_mandatory": true, "linked_service_id": "SRV_LIC_DRIVE_017" },
+      { "doc_name": "Caste Certificate", "is_mandatory": true, "linked_service_id": "SRV_CERT_CASTE_005" }
+    ]
+  },
+  {
+    "scheme_id": "BR_EDU_CIVIL_029",
+    "scheme_name": "Civil Seva Protsahan Rashi",
+    "synonyms": ["UPSC Scholarship", "BPSC Scholarship", "Exam Pass Money"],
+    "is_active": true,
+    "category": "Education",
+    "managing_office_id": "OFF_SOC_WEL_DEPT_004",
+    "application_service_id": "SRV_APP_CIVIL_029",
+    "eligibility_criteria": {
+      "education_status": "Passed Prelims Exam",
+      "residency_requirement": "Bihar",
+      "special_conditions": ["Category: SC/ST/EBC/Women", "Passed UPSC or BPSC Prelims"]
+    },
+    "benefits": {
+      "benefit_type": "Cash Award",
+      "max_amount_inr": 100000,
+      "description": "₹1 Lakh for UPSC Prelims; ₹50,000 for BPSC Prelims"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply Online with Admit Card & Result", "designated_office_id": "OFF_SOC_WEL_DEPT_004" },
+        { "step": 2, "action": "DBT Transfer", "designated_office_id": "OFF_SOC_WEL_DEPT_004" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Admit Card & Result Sheet", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Caste Certificate", "is_mandatory": true, "linked_service_id": "SRV_CERT_CASTE_005" }
+    ]
+  },
+  {
+    "scheme_id": "BR_EDU_MATRIC_030",
+    "scheme_name": "Mukhyamantri Balak/Balika Protsahan Yojana (10th)",
+    "synonyms": ["10th Pass Scholarship", "Matric First Division"],
+    "is_active": true,
+    "category": "Education",
+    "managing_office_id": "OFF_EDU_DEPT_006",
+    "application_service_id": "SRV_APP_MATRIC_030",
+    "eligibility_criteria": {
+      "education_status": "Passed Class 10",
+      "residency_requirement": "Bihar",
+      "special_conditions": ["First Division (All categories) or Second Division (SC/ST)"]
+    },
+    "benefits": {
+      "benefit_type": "Scholarship",
+      "max_amount_inr": 10000,
+      "description": "₹10,000 for 1st Division; ₹8,000 for 2nd Division (SC/ST)"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at Medhasoft Portal", "designated_office_id": "OFF_EDU_DEPT_006" },
+        { "step": 2, "action": "School Verification", "designated_office_id": "OFF_EDU_DEPT_006" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "10th Marksheet", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Bank Account (Student Name)", "is_mandatory": true, "linked_service_id": "OFF_BANK_013" }
+    ]
+  },
+  {
+    "scheme_id": "BR_AGRI_MATSYA_031",
+    "scheme_name": "Pradhan Mantri Matsya Sampada Yojana (PMMSY)",
+    "synonyms": ["Fish Farming", "Machhli Palan", "Biofloc Subsidy"],
+    "is_active": true,
+    "category": "Agriculture",
+    "managing_office_id": "OFF_FISH_DEPT_009",
+    "application_service_id": "SRV_APP_PMMSY_031",
+    "eligibility_criteria": {
+      "special_conditions": ["Own or lease pond/water body", "Willing to undertake fish farming"]
+    },
+    "benefits": {
+      "benefit_type": "Subsidy",
+      "description": "40% subsidy (General) / 60% subsidy (SC/ST/Women) on project cost for ponds, biofloc, etc."
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at Fisheries Dept Portal", "designated_office_id": "OFF_FISH_DEPT_009" },
+        { "step": 2, "action": "District Fisheries Officer Verification", "designated_office_id": "OFF_FISH_DEPT_009" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Land Records / Lease Agreement", "is_mandatory": true, "linked_service_id": "SRV_CERT_LPC_004" },
+      { "doc_name": "Project Proposal", "is_mandatory": true, "linked_service_id": null }
+    ]
+  },
+  {
+    "scheme_id": "BR_AGRI_YANTRA_032",
+    "scheme_name": "Agricultural Mechanization Scheme (SMAM)",
+    "synonyms": ["Krishi Yantra", "Tractor Subsidy", "Rotavator Subsidy"],
+    "is_active": true,
+    "category": "Agriculture",
+    "managing_office_id": "OFF_DIST_AGRI_002",
+    "application_service_id": "SRV_APP_YANTRA_032",
+    "eligibility_criteria": {
+      "employment_status": "Farmer",
+      "special_conditions": ["Registered farmer on DBT portal"]
+    },
+    "benefits": {
+      "benefit_type": "Subsidy",
+      "description": "40% to 80% subsidy on purchase of agricultural machinery (Happy Seeder, Rotavator, Reaper, etc.)"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Online Booking on OFMAS Portal", "designated_office_id": "OFF_DIST_AGRI_002" },
+        { "step": 2, "action": "Purchase from Registered Dealer", "designated_office_id": "OFF_DIST_AGRI_002" },
+        { "step": 3, "action": "Upload Bill for Subsidy", "designated_office_id": "OFF_DIST_AGRI_002" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "LPC", "is_mandatory": true, "linked_service_id": "SRV_CERT_LPC_004" },
+      { "doc_name": "Tractor RC (for implement subsidy)", "is_mandatory": false, "linked_service_id": "SRV_VEH_RC_018" }
+    ]
+  },
+  {
+    "scheme_id": "BR_SOC_NFBS_033",
+    "scheme_name": "National Family Benefit Scheme (NFBS)",
+    "synonyms": ["Parivarik Labh", "Breadwinner Death Compensation"],
+    "is_active": true,
+    "category": "Social Welfare",
+    "managing_office_id": "OFF_SOC_WEL_DEPT_004",
+    "application_service_id": "SRV_APP_NFBS_033",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "age_max": 60,
+      "special_conditions": ["Death of primary breadwinner", "BPL Family"]
+    },
+    "benefits": {
+      "benefit_type": "One-time Grant",
+      "max_amount_inr": 20000,
+      "description": "Lump sum financial assistance to bereaved household"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at Block Office / RTPS", "designated_office_id": "OFF_BLOCK_PATNA_001" },
+        { "step": 2, "action": "Inquiry by Panchayat Sevak", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Death Certificate", "is_mandatory": true, "linked_service_id": "SRV_REG_DEATH_009" },
+      { "doc_name": "Age Proof of Deceased", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" }
+    ]
+  },
+  {
+    "scheme_id": "BR_HLTH_MED_034",
+    "scheme_name": "Mukhyamantri Chikitsa Sahayata Kosh",
+    "synonyms": ["Medical Grant", "CM Relief Fund for Health"],
+    "is_active": true,
+    "category": "Health",
+    "managing_office_id": "OFF_HEALTH_DEPT_003",
+    "application_service_id": "SRV_APP_MEDRELIEF_034",
+    "eligibility_criteria": {
+      "special_conditions": ["Suffering from major disease (Cancer, Kidney, Heart)", "Income < 2.5 Lakh"]
+    },
+    "benefits": {
+      "benefit_type": "Financial Aid",
+      "max_amount_inr": 500000,
+      "description": "Grant for treatment in CGHS empaneled hospitals"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Submit Application to DM/Civil Surgeon", "designated_office_id": "OFF_DIST_MAG_014" },
+        { "step": 2, "action": "Approval by District Committee", "designated_office_id": "OFF_DIST_MAG_014" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Estimate from Hospital", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Income Certificate", "is_mandatory": true, "linked_service_id": "SRV_CERT_INC_003" }
+    ]
+  },
+  {
+    "scheme_id": "BR_SOC_INTERCASTE_035",
+    "scheme_name": "Antarjatiya Vivah Protsahan Yojana",
+    "synonyms": ["Intercaste Marriage Scheme", "Dr. Ambedkar Foundation Scheme"],
+    "is_active": true,
+    "category": "Social Welfare",
+    "managing_office_id": "OFF_SOC_WEL_DEPT_004",
+    "application_service_id": "SRV_APP_INTERCASTE_035",
+    "eligibility_criteria": {
+      "special_conditions": ["Marriage between SC/ST and Non-SC/ST", "Legal Marriage Registration"]
+    },
+    "benefits": {
+      "benefit_type": "Fixed Deposit",
+      "max_amount_inr": 100000,
+      "description": "Incentive to promote social integration"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply within 1 year of marriage at Social Welfare Dept", "designated_office_id": "OFF_SOC_WEL_DEPT_004" },
+        { "step": 2, "action": "Verification", "designated_office_id": "OFF_SOC_WEL_DEPT_004" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Marriage Registration Certificate", "is_mandatory": true, "linked_service_id": "SRV_REG_MARRIAGE_019" },
+      { "doc_name": "Caste Certificates of Couple", "is_mandatory": true, "linked_service_id": "SRV_CERT_CASTE_005" }
+    ]
+  },
+  {
+    "scheme_id": "BR_WOM_KANYAVIVAH_036",
+    "scheme_name": "Mukhyamantri Kanya Vivah Yojana",
+    "synonyms": ["Daughter Marriage Aid", "5000 scheme"],
+    "is_active": true,
+    "category": "Social Welfare",
+    "managing_office_id": "OFF_SOC_WEL_DEPT_004",
+    "application_service_id": "SRV_APP_KANYAVIVAH_036",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "special_conditions": ["Girl from BPL family", "Groom age > 21", "Marriage Registered"]
+    },
+    "benefits": {
+      "benefit_type": "Cash Assistance",
+      "max_amount_inr": 5000,
+      "description": "Direct transfer to girl's account"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at Block/RTPS", "designated_office_id": "OFF_BLOCK_PATNA_001" },
+        { "step": 2, "action": "Verification", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Marriage Registration", "is_mandatory": true, "linked_service_id": "SRV_REG_MARRIAGE_019" },
+      { "doc_name": "BPL Number", "is_mandatory": true, "linked_service_id": "SRV_RATION_CARD_010" }
+    ]
+  },
+  {
+    "scheme_id": "BR_AGRI_GOAT_037",
+    "scheme_name": "Integrated Goat & Sheep Rearing Scheme",
+    "synonyms": ["Bakri Palan", "Goat Farm Subsidy"],
+    "is_active": true,
+    "category": "Agriculture",
+    "managing_office_id": "OFF_ANIM_HUSB_010",
+    "application_service_id": "SRV_APP_GOAT_037",
+    "eligibility_criteria": {
+      "residency_requirement": "Bihar",
+      "special_conditions": ["Available land for shed", "Training certificate preferred"]
+    },
+    "benefits": {
+      "benefit_type": "Subsidy",
+      "description": "Subsidy up to 60% (SC/ST) or 50% (General) for setting up goat farm (10+1, 20+1, or 40+2 units)"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply Online at Animal Husbandry Dept", "designated_office_id": "OFF_ANIM_HUSB_010" },
+        { "step": 2, "action": "Field Verification", "designated_office_id": "OFF_ANIM_HUSB_010" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Land Proof (LPC)", "is_mandatory": true, "linked_service_id": "SRV_CERT_LPC_004" },
+      { "doc_name": "Bank Passbook", "is_mandatory": true, "linked_service_id": "OFF_BANK_013" }
+    ]
+  },
+  {
+    "scheme_id": "BR_AGRI_DAIRY_038",
+    "scheme_name": "Samagra Gavya Vikas Yojana",
+    "synonyms": ["Dairy Subsidy", "Cow Loan", "Milk Business"],
+    "is_active": true,
+    "category": "Agriculture",
+    "managing_office_id": "OFF_ANIM_HUSB_010",
+    "application_service_id": "SRV_APP_DAIRY_038",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "special_conditions": ["Unemployed youth/farmer", "Land availability"]
+    },
+    "benefits": {
+      "benefit_type": "Subsidy",
+      "description": "Subsidy up to 75% for 2-4 milch cattle unit (depending on category)"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Online Application", "designated_office_id": "OFF_ANIM_HUSB_010" },
+        { "step": 2, "action": "District Dairy Office Interview", "designated_office_id": "OFF_ANIM_HUSB_010" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Affidavit for Unemployment", "is_mandatory": true, "linked_service_id": "SRV_CERT_AFFIDAVIT_014" },
+      { "doc_name": "Land Papers", "is_mandatory": true, "linked_service_id": "SRV_CERT_LPC_004" }
+    ]
+  },
+  {
+    "scheme_id": "BR_BIZ_VISHWA_039",
+    "scheme_name": "PM Vishwakarma Yojana",
+    "synonyms": ["Artisan Scheme", "Luhar/Badhai Scheme", "Toolbox incentive"],
+    "is_active": true,
+    "category": "Business",
+    "managing_office_id": "OFF_IND_DEPT_008",
+    "application_service_id": "SRV_APP_VISHWA_039",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "special_conditions": ["Artisan in 18 traditional trades (Carpenter, Blacksmith, Barber, etc.)"]
+    },
+    "benefits": {
+      "benefit_type": "Loan + Training",
+      "max_amount_inr": 300000,
+      "description": "Collateral free loan at 5% interest + ₹15,000 Toolkit Incentive + Stipend during training"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Register at CSC (Common Service Center)", "designated_office_id": "OFF_IND_DEPT_008" },
+        { "step": 2, "action": "Verification by Panchayat/ULB", "designated_office_id": "OFF_PANCHAYAT_012" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Aadhaar Card", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" },
+      { "doc_name": "Bank Details", "is_mandatory": true, "linked_service_id": "OFF_BANK_013" }
+    ]
+  },
+  {
+    "scheme_id": "BR_ENV_JALJEEVAN_040",
+    "scheme_name": "Jal Jeevan Hariyali Abhiyan",
+    "synonyms": ["Pond Subsidy", "Pokhar Nirman", "Water Harvesting"],
+    "is_active": true,
+    "category": "Environment",
+    "managing_office_id": "OFF_DIST_AGRI_002",
+    "application_service_id": "SRV_APP_JJH_040",
+    "eligibility_criteria": {
+      "employment_status": "Farmer",
+      "special_conditions": ["Land suitable for pond/check dam"]
+    },
+    "benefits": {
+      "benefit_type": "Subsidy",
+      "max_amount_inr": 75000,
+      "description": "Subsidy for creating water harvesting structures / renovating old ponds"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at Agriculture/Minor Irrigation Dept", "designated_office_id": "OFF_DIST_AGRI_002" },
+        { "step": 2, "action": "Site Inspection", "designated_office_id": "OFF_DIST_AGRI_002" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "LPC (Land Possession)", "is_mandatory": true, "linked_service_id": "SRV_CERT_LPC_004" }
+    ]
+  },
+  {
+    "scheme_id": "BR_AGRI_SOIL_041",
+    "scheme_name": "Soil Health Card Scheme",
+    "synonyms": ["Mridha Swasthya Card", "Soil Testing"],
+    "is_active": true,
+    "category": "Agriculture",
+    "managing_office_id": "OFF_DIST_AGRI_002",
+    "application_service_id": "SRV_APP_SOIL_041",
+    "eligibility_criteria": {
+      "employment_status": "Farmer",
+      "residency_requirement": "Bihar"
+    },
+    "benefits": {
+      "benefit_type": "Service",
+      "description": "Free soil testing and report card recommending fertilizer dosage"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Soil Sample Collection by Dept", "designated_office_id": "OFF_DIST_AGRI_002" },
+        { "step": 2, "action": "Card Distribution", "designated_office_id": "OFF_DIST_AGRI_002" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Aadhaar Card", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" }
+    ]
+  },
+  {
+    "scheme_id": "BR_SOC_RATION_042",
+    "scheme_name": "National Food Security Act (Ration Card)",
+    "synonyms": ["Free Ration", "PDS System", "Rice Wheat Scheme"],
+    "is_active": true,
+    "category": "Social Welfare",
+    "managing_office_id": "OFF_SOC_WEL_DEPT_004",
+    "application_service_id": "SRV_APP_RATION_042",
+    "eligibility_criteria": {
+      "special_conditions": ["Priority Household (PHH) or Antyodaya (AAY) status", "Not income tax payer"]
+    },
+    "benefits": {
+      "benefit_type": "In-Kind",
+      "description": "5kg free foodgrain per person per month (PHH) / 35kg per family (AAY)"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Apply at SDO Office / RTPS", "designated_office_id": "OFF_BLOCK_PATNA_001" },
+        { "step": 2, "action": "Field Verification", "designated_office_id": "OFF_BLOCK_PATNA_001" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Aadhaar of all family members", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" },
+      { "doc_name": "Group Photo of Family", "is_mandatory": true, "linked_service_id": null }
+    ]
+  },
+  {
+    "scheme_id": "BR_FIN_SUKANYA_043",
+    "scheme_name": "Sukanya Samriddhi Yojana",
+    "synonyms": ["Girl Child Saving", "SSY"],
+    "is_active": true,
+    "category": "Financial",
+    "managing_office_id": "OFF_BANK_013",
+    "application_service_id": "SRV_APP_SSY_043",
+    "eligibility_criteria": {
+      "age_min": 0,
+      "age_max": 10,
+      "special_conditions": ["Account opened for Girl Child (Max 2 per family)"]
+    },     
+    "benefits": {
+      "benefit_type": "Investment",
+      "description": "High interest rate (approx 8%) savings account, tax free maturity at age 21"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Visit Post Office or Bank", "designated_office_id": "OFF_BANK_013" },
+        { "step": 2, "action": "Deposit Initial Amount (₹250)", "designated_office_id": "OFF_BANK_013" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Birth Certificate of Girl", "is_mandatory": true, "linked_service_id": "SRV_REG_BIRTH_016" },
+      { "doc_name": "Parent Aadhaar", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" }
+    ]
+  },
+  {
+    "scheme_id": "BR_FIN_APY_044",
+    "scheme_name": "Atal Pension Yojana (APY)",
+    "synonyms": ["Private Pension", "Modi Pension"],
+    "is_active": true,
+    "category": "Financial",
+    "managing_office_id": "OFF_BANK_013",
+    "application_service_id": "SRV_APP_APY_044",
+    "eligibility_criteria": {
+      "age_min": 18,
+      "age_max": 40,
+      "special_conditions": ["Must have Savings Bank Account", "Not a tax payer"]
+    },
+    "benefits": {
+      "benefit_type": "Pension",
+      "max_amount_inr": 5000,
+      "description": "Guaranteed pension of ₹1000 to ₹5000 per month after age 60"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "Fill Form at Bank", "designated_office_id": "OFF_BANK_013" },
+        { "step": 2, "action": "Auto-debit setup", "designated_office_id": "OFF_BANK_013" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "Aadhaar Card", "is_mandatory": true, "linked_service_id": "SRV_ID_AADHAAR_001" }
+    ]
+  },
+  {
+    "scheme_id": "BR_EDU_UNIFORM_045",
+    "scheme_name": "Mukhyamantri Balak/Balika Poshak Yojana",
+    "synonyms": ["School Dress Money", "Uniform Scheme"],
+    "is_active": true,
+    "category": "Education",
+    "managing_office_id": "OFF_EDU_DEPT_006",
+    "application_service_id": "SRV_APP_UNIFORM_045",
+    "eligibility_criteria": {
+      "education_status": "Enrolled in Class 1 to 12",
+      "special_conditions": ["Minimum 75% attendance"]
+    },
+    "benefits": {
+      "benefit_type": "Cash Assistance",
+      "description": "Annual cash amount (₹600 to ₹1500) depending on class level for uniform"
+    },
+    "application_process": {
+      "stages": [
+        { "step": 1, "action": "School prepares list", "designated_office_id": "OFF_EDU_DEPT_006" },
+        { "step": 2, "action": "DBT to Student Account", "designated_office_id": "OFF_EDU_DEPT_006" }
+      ]
+    },
+    "documents_required": [
+      { "doc_name": "School Enrollment", "is_mandatory": true, "linked_service_id": null },
+      { "doc_name": "Bank Account", "is_mandatory": true, "linked_service_id": "OFF_BANK_013" }
+    ]
+  }
+]

@@ -1,0 +1,1524 @@
+[
+  {
+    "service_id": "SRV_CERT_CASTE_005",
+    "service_name_en": "Issuance of Caste Certificate",
+    "service_type": "Certificate",
+    "description": "Proof of caste for SC/ST/OBC/EBC categories. Essential for Scholarships, Pensions, and Housing schemes.",
+    "responsible_office_ids":[
+      "OFF_BLOCK_PATNA_001"  
+    ],  
+    "sla_processing_time": {
+      "standard_days": 10,
+      "tatkal_days": 2
+    },
+    "documents_required": [ 
+      {
+        "doc_name": "Identity Proof",
+        "options": [
+          "Aadhaar",
+          "Voter ID"
+        ]
+      },
+      {
+        "doc_name": "Self Declaration",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Father's Caste Proof",
+        "is_mandatory": false
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_CERT_RES_002",
+    "service_name_en": "Issuance of Residential Certificate",
+    "service_type": "Certificate",
+    "description": "Proof of permanent residence in Bihar. Required for almost all state schemes (Student Credit Card, MNSSBY).",
+    "responsible_office_ids": [
+      "OFF_BLOCK_PATNA_001"
+    ],
+    "sla_processing_time": {
+      "standard_days": 10,
+      "tatkal_days": 2
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Electricity Bill / Land Receipt",
+        "is_mandatory": false
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_CERT_INC_003",
+    "service_name_en": "Issuance of Income Certificate",
+    "service_type": "Certificate",
+    "description": "Proof of annual family income. Required for Scholarships, Medical Grants, and EWS status.",
+    "responsible_office_ids": [
+      "OFF_BLOCK_PATNA_001"
+    ],
+    "sla_processing_time": {
+      "standard_days": 10,
+      "tatkal_days": 2
+    },
+    "documents_required": [
+      {
+        "doc_name": "Self Declaration of Income",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Salary Slip",
+        "is_mandatory": false
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_AGRI_LPC_006",
+    "service_name_en": "Land Possession Certificate (LPC)",
+    "service_type": "Land Record",
+    "description": "Proof of land ownership. Mandatory for PM Kisan, Diesel Subsidy, and Agricultural Input Subsidy.",
+    "responsible_office_ids": [
+      "OFF_BLOCK_PATNA_001"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Current Rent Receipt (Malgujari)",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Identity Proof",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_CERT_LPC_004",
+    "service_name_en": "Land Possession Certificate (LPC - Alternative)",
+    "service_type": "Land Record",
+    "description": "Variant ID for Land Possession Certificate used in some departmental linkages.",
+    "responsible_office_ids": [
+      "OFF_BLOCK_PATNA_001"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Updated Land Receipt",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_SOC_RATION_007",
+    "service_name_en": "New Ration Card Application",
+    "service_type": "Social Security",
+    "description": "Issuance of Ration Card for subsidized foodgrains. Required for Ujjwala Yojana and Ayushman Bharat.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar of all Family Members",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Group Photo of Family",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Account Details",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_HLTH_UDID_008",
+    "service_name_en": "Disability Certificate (UDID) Issuance",
+    "service_type": "Health Certificate",
+    "description": "Unique Disability ID for Divyangjan. Mandatory for Disability Pension scheme.",
+    "responsible_office_ids": [
+      "OFF_HEALTH_DEPT_003"
+    ],
+    "sla_processing_time": {
+      "standard_days": 21,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Photo of Applicant",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Medical Report",
+        "is_mandatory": false
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_CERT_DIS_012",
+    "service_name_en": "Disability Certificate (Medical Board)",
+    "service_type": "Health Certificate",
+    "description": "Medical board verification for disability percentage.",
+    "responsible_office_ids": [
+      "OFF_HEALTH_DEPT_003"
+    ],
+    "sla_processing_time": {
+      "standard_days": 21,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Doctor Referral",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_BIZ_GST_009",
+    "service_name_en": "GST Registration Support",
+    "service_type": "Business Registration",
+    "description": "Support for registering GST. Required for PMEGP loans and large business subsidies.",
+    "responsible_office_ids": [
+      "OFF_IND_DEPT_008"
+    ],
+    "sla_processing_time": {
+      "standard_days": 7,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "PAN Card of Business/Proprietor",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Proof of Business Address (Rent Agreement/Electricity Bill)",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Account Cancelled Cheque",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_EDU_DRCC_VER_010",
+    "service_name_en": "DRCC Document Verification",
+    "service_type": "Verification",
+    "description": "Physical verification of documents for Student Credit Card, MNSSBY, and KYP schemes.",
+    "responsible_office_ids": [
+      "OFF_EDU_DEPT_006"
+    ],
+    "sla_processing_time": {
+      "standard_days": 1,
+      "tatkal_days": 0
+    },
+    "documents_required": [
+      {
+        "doc_name": "10th & 12th Marksheets (Original)",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Passbook",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Residential Certificate",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_AGRI_SOIL_TEST_011",
+    "service_name_en": "Soil Testing Service",
+    "service_type": "Agriculture Service",
+    "description": "Testing of farm soil for Soil Health Card scheme.",
+    "responsible_office_ids": [
+      "OFF_DIST_AGRI_002"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Soil Sample",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_TRANS_DL_012",
+    "service_name_en": "Driving License Issuance",
+    "service_type": "Transport Service",
+    "description": "Issuance of Driving License. Mandatory for Gram Parivahan Yojana.",
+    "responsible_office_ids": [
+      "OFF_TRANS_DEPT_007"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Learner License",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Age Proof",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Address Proof",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_LIC_DRIVE_017",
+    "service_name_en": "Driving License (Smart Card)",
+    "service_type": "Transport Service",
+    "description": "Issuance of Smart Card Driving License.",
+    "responsible_office_ids": [
+      "OFF_TRANS_DEPT_007"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Driving Test Pass Receipt",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Biometrics",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_SOC_PARVARISH_APP_013",
+    "service_name_en": "Parvarish Application Submission",
+    "service_type": "Social Welfare Application",
+    "description": "Submission of application for orphan aid (Parvarish Yojana).",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 45,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Birth Certificate",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Guardian Aadhaar",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_NIGAM_VEND_CERT_014",
+    "service_name_en": "Street Vending Certificate",
+    "service_type": "Urban Service",
+    "description": "Certificate for street vendors. Required for PM SVANidhi loan.",
+    "responsible_office_ids": [
+      "OFF_PANCHAYAT_012"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Vending Proof",
+        "is_mandatory": false
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_CERT_VEND_015",
+    "service_name_en": "Vending ID Card Issuance",
+    "service_type": "Urban Service",
+    "description": "ID Card for Urban Street Vendors.",
+    "responsible_office_ids": [
+      "OFF_PANCHAYAT_012"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Town Vending Committee Recommendation",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_FISH_LEASE_015",
+    "service_name_en": "Fisheries Pond Lease Agreement",
+    "service_type": "Agriculture Service",
+    "description": "Lease agreement for government ponds. Required for PM Matsya Sampada Yojana.",
+    "responsible_office_ids": [
+      "OFF_FISH_DEPT_009"
+    ],
+    "sla_processing_time": {
+      "standard_days": 60,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Solvency Certificate",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_PMKISAN_006",
+    "service_name_en": "PM Kisan Samman Nidhi Application",
+    "service_type": "Scheme Application",
+    "description": "Application for PM Kisan income support scheme.",
+    "responsible_office_ids": [
+      "OFF_DIST_AGRI_002"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "LPC",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_PMJAY_007",
+    "service_name_en": "Ayushman Bharat (PM-JAY) Application",
+    "service_type": "Scheme Application",
+    "description": "Application/KYC for Ayushman Bharat Health Card.",
+    "responsible_office_ids": [
+      "OFF_HEALTH_DEPT_003"
+    ],
+    "sla_processing_time": {
+      "standard_days": 7,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Ration Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_SSPS_008",
+    "service_name_en": "Social Security Pension Application",
+    "service_type": "Scheme Application",
+    "description": "Application for Widow/Old Age/Disability pensions.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 21,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Account",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_PMAYG_009",
+    "service_name_en": "PMAY-G Housing Application",
+    "service_type": "Scheme Application",
+    "description": "Application for Rural Housing Scheme.",
+    "responsible_office_ids": [
+      "OFF_BLOCK_PATNA_001"
+    ],
+    "sla_processing_time": {
+      "standard_days": 45,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Job Card",
+        "is_mandatory": false
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_KANYA_010",
+    "service_name_en": "Kanya Utthan (Graduation) Application",
+    "service_type": "Scheme Application",
+    "description": "Application for Graduation Scholarship for girls.",
+    "responsible_office_ids": [
+      "OFF_EDU_DEPT_006"
+    ],
+    "sla_processing_time": {
+      "standard_days": 60,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Mark Sheet",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Account",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_DIESEL_011",
+    "service_name_en": "Diesel Subsidy Application",
+    "service_type": "Scheme Application",
+    "description": "Application for diesel subsidy for irrigation.",
+    "responsible_office_ids": [
+      "OFF_DIST_AGRI_002"
+    ],
+    "sla_processing_time": {
+      "standard_days": 20,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Diesel Receipt",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Farmer Reg No",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_NALJAL_012",
+    "service_name_en": "Har Ghar Nal Ka Jal Connection",
+    "service_type": "Scheme Application",
+    "description": "Application for new household water connection.",
+    "responsible_office_ids": [
+      "OFF_PHED_011"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_KABIR_013",
+    "service_name_en": "Kabir Antyeshti Anudan Application",
+    "service_type": "Scheme Application",
+    "description": "Application for funeral assistance.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 1,
+      "tatkal_days": 0
+    },
+    "documents_required": [
+      {
+        "doc_name": "Death Intimation",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "BPL Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_JSY_014",
+    "service_name_en": "Janani Suraksha Yojana Application",
+    "service_type": "Scheme Application",
+    "description": "Registration for maternal health benefits.",
+    "responsible_office_ids": [
+      "OFF_HEALTH_DEPT_003"
+    ],
+    "sla_processing_time": {
+      "standard_days": 7,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "MCP Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Account",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_MGNREGA_015",
+    "service_name_en": "MGNREGA Job Card Application",
+    "service_type": "Scheme Application",
+    "description": "Application for issuance of new Job Card.",
+    "responsible_office_ids": [
+      "OFF_BLOCK_PATNA_001"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Photo",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_DISPEN_016",
+    "service_name_en": "Disability Pension Application",
+    "service_type": "Scheme Application",
+    "description": "Application for monthly pension for disabled persons.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 21,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "UDID Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Income Certificate",
+        "is_mandatory": false
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_PMEGP_017",
+    "service_name_en": "PMEGP Loan Application",
+    "service_type": "Scheme Application",
+    "description": "Application for Prime Minister Employment Generation Programme.",
+    "responsible_office_ids": [
+      "OFF_IND_DEPT_008"
+    ],
+    "sla_processing_time": {
+      "standard_days": 45,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Project Report",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_PMS_018",
+    "service_name_en": "Post Matric Scholarship Application",
+    "service_type": "Scheme Application",
+    "description": "Application for scholarship for SC/ST/BC/EBC students.",
+    "responsible_office_ids": [
+      "OFF_EDU_DEPT_006"
+    ],
+    "sla_processing_time": {
+      "standard_days": 60,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Bonafide Certificate",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Caste/Income/Residential Certificates",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_KCC_019",
+    "service_name_en": "Kisan Credit Card Application",
+    "service_type": "Scheme Application",
+    "description": "Application for KCC loan for farmers.",
+    "responsible_office_ids": [
+      "OFF_BANK_013"
+    ],
+    "sla_processing_time": {
+      "standard_days": 14,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "LPC",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Affidavit",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_UJJWALA_020",
+    "service_name_en": "PM Ujjwala Yojana 2.0 Application",
+    "service_type": "Scheme Application",
+    "description": "Application for free LPG connection.",
+    "responsible_office_ids": [
+      "OFF_IND_DEPT_008"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Ration Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_SVANIDHI_021",
+    "service_name_en": "PM SVANidhi Loan Application",
+    "service_type": "Scheme Application",
+    "description": "Application for street vendor loan.",
+    "responsible_office_ids": [
+      "OFF_IND_DEPT_008"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Vending Certificate",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_PARVARISH_022",
+    "service_name_en": "Parvarish Yojana Application",
+    "service_type": "Scheme Application",
+    "description": "Application for foster care/orphan financial aid.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Death Certificate of Parents",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Child Birth Certificate",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_AGINPUT_023",
+    "service_name_en": "Agricultural Input Subsidy Application",
+    "service_type": "Scheme Application",
+    "description": "Application for crop loss compensation.",
+    "responsible_office_ids": [
+      "OFF_DIST_AGRI_002"
+    ],
+    "sla_processing_time": {
+      "standard_days": 25,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "LPC",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Self Declaration",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_LSBA_024",
+    "service_name_en": "Lohia Swachh Bihar Abhiyan (Toilet) Application",
+    "service_type": "Scheme Application",
+    "description": "Application for toilet construction incentive.",
+    "responsible_office_ids": [
+      "OFF_BLOCK_PATNA_001"
+    ],
+    "sla_processing_time": {
+      "standard_days": 20,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Photo with Toilet",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Passbook",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_CYCLE_025",
+    "service_name_en": "Mukhyamantri Cycle Yojana Application",
+    "service_type": "Scheme Application",
+    "description": "Processing for cycle purchase assistance for students.",
+    "responsible_office_ids": [
+      "OFF_EDU_DEPT_006"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "School Attendance Record",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Account",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_UDYAMI_026",
+    "service_name_en": "Mukhyamantri Udyami Yojana Application",
+    "service_type": "Scheme Application",
+    "description": "Application for entrepreneurship loan and subsidy.",
+    "responsible_office_ids": [
+      "OFF_IND_DEPT_008"
+    ],
+    "sla_processing_time": {
+      "standard_days": 60,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Project Report",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Caste Certificate",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_FASAL_027",
+    "service_name_en": "Crop Assistance (Fasal Sahayata) Application",
+    "service_type": "Scheme Application",
+    "description": "Application for crop yield loss assistance.",
+    "responsible_office_ids": [
+      "OFF_DIST_AGRI_002"
+    ],
+    "sla_processing_time": {
+      "standard_days": 45,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "LPC",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_PARIVAHAN_028",
+    "service_name_en": "Mukhyamantri Gram Parivahan Application",
+    "service_type": "Scheme Application",
+    "description": "Application for public transport vehicle subsidy.",
+    "responsible_office_ids": [
+      "OFF_TRANS_DEPT_007"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Driving License",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Caste Certificate",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_CIVIL_029",
+    "service_name_en": "Civil Seva Protsahan Application",
+    "service_type": "Scheme Application",
+    "description": "Application for UPSC/BPSC prelims pass incentive.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Admit Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Caste Certificate",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_MATRIC_030",
+    "service_name_en": "Matric Protsahan Yojana Application",
+    "service_type": "Scheme Application",
+    "description": "Application for 10th pass scholarship.",
+    "responsible_office_ids": [
+      "OFF_EDU_DEPT_006"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "10th Marksheet",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Account",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_PMMSY_031",
+    "service_name_en": "PM Matsya Sampada Application",
+    "service_type": "Scheme Application",
+    "description": "Application for fisheries projects.",
+    "responsible_office_ids": [
+      "OFF_FISH_DEPT_009"
+    ],
+    "sla_processing_time": {
+      "standard_days": 45,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Lease Agreement/LPC",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Project Proposal",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_YANTRA_032",
+    "service_name_en": "Farm Machinery (Yantra) Subsidy Application",
+    "service_type": "Scheme Application",
+    "description": "Application for agricultural machinery subsidy.",
+    "responsible_office_ids": [
+      "OFF_DIST_AGRI_002"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "LPC",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Tractor RC (if applicable)",
+        "is_mandatory": false
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_NFBS_033",
+    "service_name_en": "National Family Benefit Application",
+    "service_type": "Scheme Application",
+    "description": "Application for one-time grant upon death of breadwinner.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Death Certificate",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Age Proof",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_MEDRELIEF_034",
+    "service_name_en": "Chief Minister Medical Relief Application",
+    "service_type": "Scheme Application",
+    "description": "Application for medical treatment grant.",
+    "responsible_office_ids": [
+      "OFF_HEALTH_DEPT_003"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Hospital Estimate",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Income Certificate",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_INTERCASTE_035",
+    "service_name_en": "Intercaste Marriage Incentive Application",
+    "service_type": "Scheme Application",
+    "description": "Application for incentive for inter-caste marriages.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 60,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Marriage Certificate",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Caste Certificates",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_KANYAVIVAH_036",
+    "service_name_en": "Kanya Vivah Yojana Application",
+    "service_type": "Scheme Application",
+    "description": "Application for marriage assistance for BPL girls.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Marriage Registration",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "BPL Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_GOAT_037",
+    "service_name_en": "Goat Rearing Subsidy Application",
+    "service_type": "Scheme Application",
+    "description": "Application for goat farming subsidy.",
+    "responsible_office_ids": [
+      "OFF_ANIM_HUSB_010"
+    ],
+    "sla_processing_time": {
+      "standard_days": 45,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "LPC",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Account",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_DAIRY_038",
+    "service_name_en": "Samagra Gavya Vikas Application",
+    "service_type": "Scheme Application",
+    "description": "Application for dairy farm establishment subsidy.",
+    "responsible_office_ids": [
+      "OFF_ANIM_HUSB_010"
+    ],
+    "sla_processing_time": {
+      "standard_days": 45,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "LPC",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Unemployment Affidavit",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_VISHWA_039",
+    "service_name_en": "PM Vishwakarma Registration",
+    "service_type": "Scheme Application",
+    "description": "Registration for artisan support scheme.",
+    "responsible_office_ids": [
+      "OFF_IND_DEPT_008"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Details",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_JJH_040",
+    "service_name_en": "Jal Jeevan Hariyali Application",
+    "service_type": "Scheme Application",
+    "description": "Application for water harvesting/pond subsidy.",
+    "responsible_office_ids": [
+      "OFF_DIST_AGRI_002"
+    ],
+    "sla_processing_time": {
+      "standard_days": 45,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "LPC",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_SOIL_041",
+    "service_name_en": "Soil Health Card Application",
+    "service_type": "Scheme Application",
+    "description": "Request for soil testing and health card.",
+    "responsible_office_ids": [
+      "OFF_DIST_AGRI_002"
+    ],
+    "sla_processing_time": {
+      "standard_days": 20,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Soil Sample",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_RATION_042",
+    "service_name_en": "Ration Card Application (Scheme Linked)",
+    "service_type": "Scheme Application",
+    "description": "Application for inclusion in NFSA/Ration Card list.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Family Group Photo",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_SSY_043",
+    "service_name_en": "Sukanya Samriddhi Account Opening",
+    "service_type": "Financial Service",
+    "description": "Application to open SSY account for girl child.",
+    "responsible_office_ids": [
+      "OFF_BANK_013"
+    ],
+    "sla_processing_time": {
+      "standard_days": 1,
+      "tatkal_days": 0
+    },
+    "documents_required": [
+      {
+        "doc_name": "Birth Certificate",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Parent Aadhaar",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_APY_044",
+    "service_name_en": "Atal Pension Yojana Enrollment",
+    "service_type": "Financial Service",
+    "description": "Enrollment form for APY pension scheme.",
+    "responsible_office_ids": [
+      "OFF_BANK_013"
+    ],
+    "sla_processing_time": {
+      "standard_days": 1,
+      "tatkal_days": 0
+    },
+    "documents_required": [
+      {
+        "doc_name": "Bank Account",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_APP_UNIFORM_045",
+    "service_name_en": "School Uniform Subsidy Processing",
+    "service_type": "Scheme Application",
+    "description": "Processing for student uniform cash assistance.",
+    "responsible_office_ids": [
+      "OFF_EDU_DEPT_006"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "School Admission Record",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Account",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_REG_FARMER_000",
+    "service_name_en": "Farmer Registration (DBT)",
+    "service_type": "Registration",
+    "description": "Registration on DBT Agriculture portal to get 13-digit Farmer ID.",
+    "responsible_office_ids": [
+      "OFF_DIST_AGRI_002"
+    ],
+    "sla_processing_time": {
+      "standard_days": 7,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Aadhaar Card",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Bank Passbook",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_ID_AADHAAR_001",
+    "service_name_en": "Aadhaar Enrollment/Update",
+    "service_type": "Identity Service",
+    "description": "Enrollment or update of Aadhaar card details.",
+    "responsible_office_ids": [
+      "OFF_BANK_013"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Identity Proof",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Address Proof",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_CERT_AFFIDAVIT_014",
+    "service_name_en": "Executive Magistrate Affidavit",
+    "service_type": "Legal Service",
+    "description": "Affidavit for various purposes (Income, KCC, Corrections).",
+    "responsible_office_ids": [
+      "OFF_BLOCK_PATNA_001"
+    ],
+    "sla_processing_time": {
+      "standard_days": 1,
+      "tatkal_days": 0
+    },
+    "documents_required": [
+      {
+        "doc_name": "Application Draft",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "ID Proof",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_REG_DEATH_009",
+    "service_name_en": "Death Registration Certificate",
+    "service_type": "Registration",
+    "description": "Issuance of Death Certificate.",
+    "responsible_office_ids": [
+      "OFF_HEALTH_DEPT_003"
+    ],
+    "sla_processing_time": {
+      "standard_days": 21,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Hospital Report / Cremation Receipt",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Deceased Aadhaar",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_REG_BIRTH_016",
+    "service_name_en": "Birth Registration Certificate",
+    "service_type": "Registration",
+    "description": "Issuance of Birth Certificate.",
+    "responsible_office_ids": [
+      "OFF_HEALTH_DEPT_003"
+    ],
+    "sla_processing_time": {
+      "standard_days": 21,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Hospital Discharge Slip",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Parent Aadhaar",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_VEH_RC_018",
+    "service_name_en": "Vehicle Registration Certificate (RC)",
+    "service_type": "Transport Service",
+    "description": "Issuance of Vehicle Registration Certificate.",
+    "responsible_office_ids": [
+      "OFF_TRANS_DEPT_007"
+    ],
+    "sla_processing_time": {
+      "standard_days": 15,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Dealer Sale Certificate",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Insurance",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_REG_MARRIAGE_019",
+    "service_name_en": "Marriage Registration Certificate",
+    "service_type": "Registration",
+    "description": "Legal registration of marriage.",
+    "responsible_office_ids": [
+      "OFF_SDO_MUNGER_001"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Wedding Invitation Card",
+        "is_mandatory": false
+      },
+      {
+        "doc_name": "Witness ID Proofs",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Couple Aadhaar",
+        "is_mandatory": true
+      }
+    ]
+  },
+  {
+    "service_id": "SRV_RATION_CARD_010",
+    "service_name_en": "Ration Card Issuance/Modification",
+    "service_type": "Social Security",
+    "description": "Issuance or modification of Ration Card.",
+    "responsible_office_ids": [
+      "OFF_SOC_WEL_DEPT_004"
+    ],
+    "sla_processing_time": {
+      "standard_days": 30,
+      "tatkal_days": null
+    },
+    "documents_required": [
+      {
+        "doc_name": "Family Group Photo",
+        "is_mandatory": true
+      },
+      {
+        "doc_name": "Aadhaar Cards",
+        "is_mandatory": true
+      }
+    ]
+  } 
+]
